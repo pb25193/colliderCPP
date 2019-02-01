@@ -1,0 +1,5 @@
+﻿  main.cpp
+c:\dev\git\collidercpp\collidercpp\main.cpp(41): warning C4305: 'argument': truncation from 'double' to 'float'
+  geometry.cpp
+  Generating Code...
+  colliderCPP.vcxproj -> C:\Dev\Git\colliderCPP\x64\Debug\colliderCPP.exe
