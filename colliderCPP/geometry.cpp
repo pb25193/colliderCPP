@@ -11,6 +11,8 @@ Point::Point(float Xin, float Yin) {
 	X = Xin;
 	Y = Yin;
 }
+Point::Point( ) {}
+
 ////Lines
 Line::Line(float slope, float intercept) {
 	m = slope;
@@ -71,6 +73,9 @@ bool on(Point pt, Line l) {
 	return (pt.Y - l.m*pt.X - l.c == 0);
 }
 Point intersect(Line l1, Line l2) {
+	if (l1.m == l2.m) {
+		return Point();
+	}
 	float x = (l1.c - l2.c) / (l2.m - l1.m);
 	float y = l1.m*x + l1.c;
 	return Point(x, y);
