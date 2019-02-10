@@ -1,5 +1,7 @@
 ﻿  main.cpp
 c:\dev\git\collidercpp\collidercpp\main.cpp(41): warning C4305: 'argument': truncation from 'double' to 'float'
   geometry.cpp
+c:\dev\git\collidercpp\collidercpp\geometry.cpp(64): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\dev\git\collidercpp\collidercpp\geometry.cpp(83): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   Generating Code...
   colliderCPP.vcxproj -> C:\Dev\Git\colliderCPP\x64\Debug\colliderCPP.exe

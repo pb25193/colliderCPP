@@ -1,5 +1,5 @@
 #pragma once
-
+#define M_PI           3.14159265358979323846
 
 //structs in a 2D world
 struct Point
@@ -12,6 +12,8 @@ struct Point
 	void print();
 	void move(float dx, float dy);
 	void move(Point dp);
+	void rotateByOrigin(float theta);
+
 };
 
 struct Line
@@ -23,6 +25,14 @@ struct Line
 	Line(float slope, Point pt);
 
 	void print();
+	void move(float dx, float dy);
+	void move(Point pt);
+	void movePerp(float d);
+	void rotate(float theta, Point pivot = Point(0, 0));
+
+private:
+	void rotateByOrigin(float theta);
+	float rotateSlope(float theta);
 };
 
 //distance evaluators
